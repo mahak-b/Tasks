@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheNewsHive - blogger's destination</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+</head>
+<body>
+    <header id="Home">
+        <h1>TheNewsHive</h1>
+        </header>
+        <nav class="navbar">
+            <div class="nav" id = "navLinks">
+            <a href="#Home">Home</a>
+            <a href="#">News</a>
+            <a href="#">World</a>
+            <a href="#">Business</a>
+            <a href="#">Politics</a>
+            <a href="#">Entertainment</a>
+            <a href="#">Sports</a>
+            </div>
+           
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="search-container">
+                <img src="images/search_icon.jpeg" alt="Search Icon" class="search-icon" id="searchIcon">
+                <div class="search-box" id="searchBox">
+                  <input type="text" placeholder="Search...">
+                  <button>Search</button>
+                </div>
+              </div>
+        </nav>
+
+        <div class="breaking-news" id="Home">
+            <img src="images/lightening_icon.jpeg" alt=" " class="breaking-news-icon">
+            <div class="breaking-news-content">
+              <span class="news-title">Breaking News</span>
+              <p class="para">local coming back on street again after</p>
+            </div>
+            <div class="temp-date">
+              <img src="/images/temp_icon.jpg" alt="Temperature Icon" class="temp-icon">
+              <span class="temp">° , </span>
+              <span class="date" id="currentDate"></span>
+            </div>
+          </div>
+          
+    <main id="Home">
+        <section id="large-blogs"></section>
+        <aside id="small-blogs">
+            <div class="tab">
+                <button class="tablinks" onclick="openTab(event, 'Latest')" id="defaultOpen">Latest</button>
+                <button class="tablinks" onclick="openTab(event, 'Popular')">Popular</button>
+            </div>
+            <div id="Latest" class="tabcontent"></div>
+            <div id="Popular" class="tabcontent"></div>
+        </aside>
+    </main>
+
+    <div id="blogModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 id="modal-headline"></h2>
+            <img id="modal-image" src="" alt="">
+            <p id="modal-author-date"></p>
+            <p id="modal-content"></p>
+        </div>
+    </div>
+
+    <script src="sjs.js"></script>
+</body>
+</html>
